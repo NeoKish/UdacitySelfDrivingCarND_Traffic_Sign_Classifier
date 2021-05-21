@@ -9,7 +9,7 @@ The goal of the project is to build, train, validate and test a deep learning mo
 [Project]: ./Traffic_Sign_Classifier.html
 [Folder1]: ./data
 [Image1]: ./output_images/y_train_plot_hist.png
-[Folder2]: ./german_web_images
+[Folder2]: ./german_web_images/
 
 ## Step 0 : Load the Data
 
@@ -79,7 +79,7 @@ My final model results were:
 ## Step 3 : Test a Model on New Images
 
 
-We have selected five images from the web to gauge the performance of the model . The images are stored in [Folder 2]
+We have selected five images from the web to gauge the performance of the model . The images are stored in [Folder2]
 
 The images were normalized before testing with model. 
 
