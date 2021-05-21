@@ -1,6 +1,6 @@
 # Traffic Sign Classifier 
 
-This project [Project] is part of Udacity Self Driving Car NanoDegree project. In this project, we were exposed to concepts of Neural Networks like softmax,cross entropy, gradient descent optimizer,regularization techiques like dropout, pooling, types of Neural Networks such as Convolutional Neural Network and the famous LeNet model Architecture. For this project, we are using open source Tensorflow library  for building and training the models and are using the course provided workspace enabled with GPU. 
+This project [Project] is part of Udacity Self Driving Car NanoDegree project. In this project, we were exposed to concepts of Neural Networks like softmax,cross entropy, gradient descent optimizer,regularization techiques like dropout, pooling, types of Neural Networks such as Convolutional Neural Network and the famous LeNet model Architecture. For this project, we are using open source Tensorflow library  for building and training the models and are using the course provided workspace enabled with GPU for running the model.
 
 The goal of the project is to build, train, validate and test a deep learning model on German Traffic images dataset. The requirement of project is to achieve more than 93% validation accuracy and then test it with new set of 5 images obtained from web to gauge the accuracy of the model. There is no requirement to perform at any percentage on these new set of images but it is a good way to understand how the model reacts to a different set of test images. 
 
@@ -34,6 +34,7 @@ In the second step, we used python function like len() to find out the number of
 In the third step, we train and test the model.The images are normalized before feeding it to training model so that the data has zero mean and equal variance. The formula used for normalization is (image_data - 128)/ 128. I did try to use grayscale but I didn't achieve much improvement with it. For training the model, I have followed the Lenet model architecture which is described below
 
 ![image](https://user-images.githubusercontent.com/66986430/119078812-89dce700-ba14-11eb-8f26-80d245f8798c.png)
+The above architecture was proposed and implemented by computer scientist Yann LeCun
 
 
 ### Input
@@ -43,16 +44,27 @@ The LeNet architecture accepts a 32x32xC image as input, where C is the number o
 ### Architecture
 
 Layer 1: Convolutional. Input = 32x32x3. Output = 28x28x6.
+
 Activation. Rectifed Linear Unit(ReLu) is used 
+
 Pooling. Input = 28x28x6. Output = 14x14x6.
+
 Layer 2: Convolutional. Output = 10x10x16.
+
 Activation. Rectifed Linear Unit(ReLu) is used 
+
 Pooling. Input = 10x10x16. Output = 5x5x16.
+
 Flatten. Flatten the output shape of the final pooling layer such that it's 1D instead of 3D. Input = 5x5x16. Output = 400.
+
 Layer 3: Fully Connected. Input = 400. Output = 120.
+
 Activation. Rectifed Linear Unit(ReLu) is used .
+
 Layer 4: Fully Connected. Input = 120. Output = 84.
+
 Activation. Rectifed Linear Unit(ReLu) is used .
+
 Layer 5: Fully Connected. Input = 84. Output = 43.
 
 ### Output
