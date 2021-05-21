@@ -1,5 +1,11 @@
 # Traffic Sign Classifier 
 
+![image](https://user-images.githubusercontent.com/66986430/119080660-1fc64100-ba18-11eb-8b19-2bdfcbe51b9c.png)
+
+                       German Traffic Sign Dataset referred from following link https://paperswithcode.com/dataset/gtsrb
+
+## Project Description
+
 This project [Project] is part of Udacity Self Driving Car NanoDegree project. In this project, we were exposed to concepts of Neural Networks like softmax,cross entropy, gradient descent optimizer,regularization techiques like dropout, pooling, types of Neural Networks such as Convolutional Neural Network and the famous LeNet model Architecture. For this project, we are using open source Tensorflow library  for building and training the models and are using the course provided workspace enabled with GPU for running the model.
 
 The goal of the project is to build, train, validate and test a deep learning model on German Traffic images dataset. The requirement of project is to achieve more than 93% validation accuracy and then test it with new set of 5 images obtained from web to gauge the accuracy of the model. There is no requirement to perform at any percentage on these new set of images but it is a good way to understand how the model reacts to a different set of test images. 
@@ -26,7 +32,9 @@ We separate out the features(images) and labels(sign_names) sections and save it
 
 ## Step 1 : Dataset Summary and Exploration
 
-In the second step, we used python function like len() to find out the number of samples in each dataset and function shape to find out the height and width of the images. To find out the unique classes we have used numpy function unique.To gauge the types and number of image, we did a histogram visualisation of labels for training dataset. The visualisation image can be found on [Image1] . As evidentfrom the image, we have 43 unique classes and the dataset contains more of speed limit images.
+In the second step, we used python function like len() to find out the number of samples in each dataset and function shape to find out the height and width of the images. To find out the unique classes we have used numpy function unique.To gauge the types and number of image, we did a histogram visualisation of labels for training dataset. The visualisation image can be found on [Image1] . As evident from the image, we have 43 unique classes and the dataset contains more of speed limit images.
+
+![image](https://user-images.githubusercontent.com/66986430/119080943-a7ac4b00-ba18-11eb-9c9f-7f687381969b.png)
 
 
 ## Step 2 : Design and Test a Model Architecture
