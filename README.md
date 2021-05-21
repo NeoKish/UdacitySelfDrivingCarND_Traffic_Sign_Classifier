@@ -33,6 +33,9 @@ In the second step, we used python function like len() to find out the number of
 
 In the third step, we train and test the model.The images are normalized before feeding it to training model so that the data has zero mean and equal variance. The formula used for normalization is (image_data - 128)/ 128. I did try to use grayscale but I didn't achieve much improvement with it. For training the model, I have followed the Lenet model architecture which is described below
 
+![image](https://user-images.githubusercontent.com/66986430/119078812-89dce700-ba14-11eb-8f26-80d245f8798c.png)
+
+
 ### Input
 
 The LeNet architecture accepts a 32x32xC image as input, where C is the number of color channels which is 3 in our case.
